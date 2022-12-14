@@ -1,0 +1,15 @@
+M291 P"Será executado o teste de repetibilidade do probe, serão feitas 10 medidas. Ok ou Cancelar?" R"AVISO!" S3 ; User must click OK or cancel.
+
+if !move.axes[0].homed || !move.axes[1].homed || !move.axes[2].homed
+  G28
+  
+G30 P0 X{global.centroMesaX} Y{global.centroMesaY} Z-9999
+G30 P1 X{global.centroMesaX} Y{global.centroMesaY} Z-9999
+G30 P2 X{global.centroMesaX} Y{global.centroMesaY} Z-9999
+G30 P3 X{global.centroMesaX} Y{global.centroMesaY} Z-9999
+G30 P4 X{global.centroMesaX} Y{global.centroMesaY} Z-9999
+G30 P5 X{global.centroMesaX} Y{global.centroMesaY} Z-9999
+G30 P6 X{global.centroMesaX} Y{global.centroMesaY} Z-9999
+G30 P7 X{global.centroMesaX} Y{global.centroMesaY} Z-9999
+G30 P8 X{global.centroMesaX} Y{global.centroMesaY} Z-9999
+G30 P9 X{global.centroMesaX} Y{global.centroMesaY} Z-9999 S-1

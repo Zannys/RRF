@@ -1,0 +1,12 @@
+M291 P"Será executado o procedimento de leitura do offset do Z, deseja continuar?" R"AVISO!" S3 ; User must click OK or cancel.
+G1 X{global.centroMesaProbeX} Y{global.centroMesaProbeY} F4000
+M561
+if move.axes[2].machinePosition < 10 | move.axes[2].machinePosition > 10
+ G1 Z10 F3000
+M400
+M401
+G4 S1
+G30 S-1
+M400
+G4 s1
+M402

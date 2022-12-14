@@ -1,0 +1,6 @@
+M118 S"Configurando WIFI"
+M552 S0
+G4 S5
+M587 S"HUEBR50" P"g4br!3!zanys2family"
+G4 S5
+M552 S1
